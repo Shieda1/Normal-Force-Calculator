@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normal Force Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="normalForceRadio" name="variables" checked>
+  <label for="normalForceRadio">Normal Force</label>
+
+  <input type="radio" id="massoftheObjectRadio" name="variables">
+  <label for="massoftheObjectRadio">Mass of the Object</label>
+
+  <input type="radio" id="accelerationofGravityRadio" name="variables">
+  <label for="accelerationofGravityRadio">Acceleration of Gravity</label>
+
+  <input type="radio" id="angleofInclinationRadio" name="variables">
+  <label for="angleofInclinationRadio">Angle of Inclination</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(m) Mass of the Object (kg)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(g) Acceleration of Gravity (m/s²)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(x) Angle of Inclination (degrees)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
